@@ -35,3 +35,15 @@ items[2].style.backgroundColor='green'
 for (const item of items) {
     item.style.fontWeight='bold';
 }
+
+let li=document.createElement('li');
+li.innerText='Item5';
+let ul=document.getElementsByTagName('ul');
+console.log(ul);
+ul[0].append(li);
+
+li.style.padding='0.75rem 1.25rem';
+li.style.listStyle='none';
+li.style.border='1px solid rgba(0,0,0,0.125)';
+li.style.fontWeight='bold';
+
