@@ -47,3 +47,9 @@ li.style.listStyle='none';
 li.style.border='1px solid rgba(0,0,0,0.125)';
 li.style.fontWeight='bold';
 
+
+let lis =document.querySelectorAll('li');
+console.log(lis);
+lis[1].style.backgroundColor='green';
+lis[2].style.display='none'
+
