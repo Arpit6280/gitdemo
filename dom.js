@@ -23,3 +23,15 @@ let addItem=document.querySelector('.title');
 //console.log(addItem);
 addItem.style.fontSize='bold';
 addItem.style.color='green';
+
+
+let items=document.getElementsByClassName('list-group-item');
+// console.log(items);
+
+// items[1].textContent='hello 2';
+// items[1].style.fontWeight='bold';
+
+items[2].style.backgroundColor='green'
+for (const item of items) {
+    item.style.fontWeight='bold';
+}
