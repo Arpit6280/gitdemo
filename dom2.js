@@ -1,4 +1,4 @@
-let itemList=document.querySelector('#items');
+//let itemList=document.querySelector('#items');
 
 // parentnode
 
@@ -44,32 +44,33 @@ let itemList=document.querySelector('#items');
 
 //createElement
 
-let newDiv=document.createElement('div');
+// let newDiv=document.createElement('div');
 
-newDiv.className='hello'
-newDiv.id='hello1';
+// newDiv.className='hello'
+// newDiv.id='hello1';
 
-//add attributes
-newDiv.setAttribute('title','Hello Div');
+// //add attributes
+// newDiv.setAttribute('title','Hello Div');
 
-// create text node
-let newDivText=document.createTextNode('Hello World');
+// // create text node
+// let newDivText=document.createTextNode('Hello World');
 
-//Add text to div
-newDiv.appendChild(newDivText);
+// //Add text to div
+// newDiv.appendChild(newDivText);
 
-let container=document.querySelector('header .container');
-let h1=document.querySelector('header h1');
+// let container=document.querySelector('header .container');
+// let h1=document.querySelector('header h1');
 
-console.log(newDiv);
+// console.log(newDiv);
 
-newDiv.style.fontSize='30px';
+// newDiv.style.fontSize='30px';
 
-container.insertBefore(newDiv,h1);
+// container.insertBefore(newDiv,h1);
 
-let lis=document.querySelector('.list-group-item');
+// let lis=document.querySelector('.list-group-item');
 
-let h2=document.createElement('h2');
-h2.innerText='Hello World'
-console.log(lis);
-lis.insertAdjacentElement('beforebegin',h2)
+// let h2=document.createElement('h2');
+// h2.innerText='Hello World'
+// console.log(lis);
+// lis.insertAdjacentElement('beforebegin',h2)
+
