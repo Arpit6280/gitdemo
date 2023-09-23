@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-image: url(bg11.png);
+      }
+      .conatiner {
+        display: flex;
+        justify-content: space-evenly;
+      }
+      h2 {
+        color: orange;
+      }
+      .middle {
+        border: 2px solid orange;
+        padding: 20px 10px;
+        border-radius: 5px;
+      }
+      input {
+        height: 25px;
+      }
+      .inp {
+        width: 97%;
+        margin-bottom: 20px;
+      }
+      h3 {
+        text-align: center;
+        color: orange;
+      }
+      p {
+        text-align: center;
+      }
+      .fbtn {
+        width: 100%;
+        background-color: orange;
+        color: white;
+        border: 1px solid orange;
+        height: 35px;
+      }
+      .inp2 {
+        width: 48%;
+        margin-right: 1px;
+        margin-bottom: 20px;
+      }
+      .right {
+        margin-top: 30px;
+      }
+      .btns {
+        padding: 5px;
+        border: 2px solid orange;
+        margin-left: 4px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="conatiner">
+      <h2>YAV</h2>
+
+      <div class="middle">
+        <h3>Registration Form</h3>
+        <p>On click submit button your data is stored to localstorage</p>
+        <hr />
+        <form action="" id="form">
+          <label for="name">Name:</label>
+          <br />
+          <input type="text" name="name" class="inp inputs" />
+          <label for="email">Email:</label>
+          <br />
+          <input type="email" name="email" class="inp inputs" />
+          <label for="number">Phone:</label>
+          <br />
+          <input type="number" name="number" class="inp inputs" />
+          <br />
+          <button class="fbtn">SUBMIT</button>
+        </form>
+      </div>
+      <div class="right">
+        <button class="btns">Sign Up</button>
+        <button class="btns">Sign In</button>
+      </div>
+    </div>
+    <script src="registration.js"></script>
+  </body>
+</html>
