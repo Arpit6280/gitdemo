@@ -10,7 +10,8 @@
       }
       .conatiner {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
+        align-items: center;
       }
       h2 {
         color: orange;
@@ -41,26 +42,14 @@
         border: 1px solid orange;
         height: 35px;
       }
-      .inp2 {
-        width: 48%;
-        margin-right: 1px;
-        margin-bottom: 20px;
-      }
       .right {
         margin-top: 30px;
-      }
-      .btns {
-        padding: 5px;
-        border: 2px solid orange;
-        margin-left: 4px;
-        border-radius: 5px;
+        text-align: center;
       }
     </style>
   </head>
   <body>
     <div class="conatiner">
-      <h2>YAV</h2>
-
       <div class="middle">
         <h3>Registration Form</h3>
         <p>On click submit button your data is stored to localstorage</p>
@@ -80,11 +69,11 @@
         </form>
         
       </div>
-      <div class="right">
-        <ul id="ul">
-          
-        </ul>
-      </div>
+    </div>
+    <div class="right">
+      <ul id="ul">
+        
+      </ul>
     </div>
     <script src="registration.js"></script>
   </body>
