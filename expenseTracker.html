@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Expense Tracker App</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+    h2{
+        color: rgb(235, 33, 33);
+        text-align: center;
+    }
+     body {
+        background-image: url(bg11.png);
+      }
+</style>
+<body>
+
+<div class="container">
+  <h2 class="text">Expense tracker app</h2>
+  <form action="/action_page.php" id="form">
+    <div class="form-group">
+      <label for="expense">Choose Expense Amount:</label>
+      <input type="text" class="form-control" id="amt" placeholder="Choose Expense Amount:" name="expense">
+    </div>
+    <div class="form-group">
+      <label for="dscrip">Choose Description:</label>
+      <input type="text" class="form-control" id="des" placeholder="Choose Description:" name="descrip">
+    </div>
+    <div class="form-group" class="form-control">
+        <label for="pwd">Choose a category:</label>
+        <select name="" id="category">
+            <option value="Entertainment">Entertainment</option>
+            <option value="Transportation">Transportation</option>
+            <option value="Food">Food</option>
+        </select>
+    </div>
+ <button type="submit" class="btn btn-primary">Add Expense</button>
+  </form>
+  <div>
+    <ul id="ul">
+
+    </ul>
+  </div>
+</div>
+
+ <script src="expenseTracker.js"></script>
+
+</body>
+</html>
