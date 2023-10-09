@@ -3,6 +3,7 @@
 let btn=document.querySelector('.fbtn');
 let form=document.querySelector('#form');
 let ul=document.querySelector('#ul')
+var datas = document.querySelectorAll(".inputs")
 btn.addEventListener('click',()=>{
   showOutput();   
 })
@@ -11,7 +12,7 @@ form.addEventListener('submit',(e)=>{
 })
 
 function showOutput(){
-    var datas = document.querySelectorAll(".inputs")
+    
     let users={
         name:datas[0].value,
         email:datas[1].value,
@@ -27,8 +28,19 @@ function showOutput(){
    showOnScreen(users,datas);
 }
 
+    window.addEventListener('DOMContentLoaded',()=>{
+        axios.get('https://crudcrud.com/api/bfdd50eedf2d4684875e3332679ad514/appointment')
+        .then((res)=> {
+            for( let i=0;i<res.data.length;++i){
+                showOnScreen(res.data[i]);
+            }
+        })
+        .catch(err=> console.log(err))
+           showOnScreen(users);
+    })
 
- function showOnScreen(users,datas){
+
+ function showOnScreen(users){
     let button=document.createElement('button');
     let editBtn=document.createElement('button');
     editBtn.id='ebtn';
@@ -64,26 +76,3 @@ function showOutput(){
     localStorage.removeItem(users.email);
   })
  }
-
-
- 
-   
-
-
-// function deleteData(li,users){
-//     localStorage.removeItem(users.email);
-//     ul.removeChild(li);
-//     ul.removeChild(button)
-//     ul.removeChild(editBtn);
-// }
-
-// function editData(li){
-//     ul.removeChild(li);
-//     ul.removeChild(button);
-//     ul.removeChild(editBtn);
-   
-//     datas[0].value=users.name;
-//     datas[1].value=users.email;
-//     datas[2].value=users.phoneNo;
-//     localStorage.removeItem(users.email);
-// }
