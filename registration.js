@@ -22,7 +22,7 @@ btn.addEventListener('click',()=>{
     button.id='btn';
     button.innerText='Delete'
     let li=document.createElement('li');
-    li.innerText=`${datas[0].value}  ${datas[1].value} ${datas[2].value}  `
+    li.innerText=`${datas[0].value}  ${datas[1].value} ${datas[2].value}`
     ul.appendChild(li);
     ul.appendChild(button);
     ul.appendChild(editBtn)
@@ -63,3 +63,4 @@ btn.addEventListener('click',()=>{
 form.addEventListener('submit',(e)=>{
     e.preventDefault();
 })
+
